@@ -2,9 +2,9 @@
   {
     "objectID": "posts/elite-eight-women-basketball/index.html",
     "href": "posts/elite-eight-women-basketball/index.html",
-    "title": "Relationship between Assists and Elite Eight Women’s Basketball",
+    "title": "Is There a Relationship between a Number of Assists and Final Score in 2024 Women’s Elite Eight?",
     "section": "",
-    "text": "Does assists help Elite Eight Woman’s Basketball to victory?\n\nlibrary(tidyverse)"
+    "text": "Whether a team’s ultimate score in the Elite Eight is correlated with the amount of assists they record is a subject that coaches,fans, and analysts alike are asking asking as the 2024 NCAA Women’s Basketball Tournament approaches its end. Assists have a reputation as indicators of a good team play and offensive cooperation, but how do they relate to the outcome of games at such a high level of competition? We will explore the relationship between assists and final score, compare winning teams’ assists with losing teams, and find the distribution of assists for winning and losing teams.\n\nlibrary(tidyverse)\n\n\nelite &lt;- read.csv(\"C:/Users/alisc/OneDrive/Documents/Desktop/blog/aliscynSportBlog/posts/elite-eight-women-basketball/2024_elite_eight_wbb.csv\")"
   },
   {
     "objectID": "about.html",
@@ -18,6 +18,6 @@
     "href": "index.html",
     "title": "aliscynSportBlog",
     "section": "",
-    "text": "Relationship between Assists and Elite Eight Women’s Basketball\n\n\n\n\n\n\nbasketball\n\n\nvolleyball\n\n\nhuskers\n\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\nNo matching items"
+    "text": "Is There a Relationship between a Number of Assists and Final Score in 2024 Women’s Elite Eight?\n\n\nHow do winning teams differ in assists compared to losing teams?\n\n\n\nbasketball\n\n\nvolleyball\n\n\nhuskers\n\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\nNo matching items"
   }
 ]
