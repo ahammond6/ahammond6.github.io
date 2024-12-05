@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "posts/paige_caitlin_basketball/index.html",
+    "href": "posts/paige_caitlin_basketball/index.html",
+    "title": "Paige Bueckers vs. Caitlin Clark: A Statistical Battle for Supremacy",
+    "section": "",
+    "text": "In the world of women’s college basketball, few players have captured the attention of fans like Paige Bueckers and Caitlin Clark. Both players have become household names, known for their incredible skills and leadership on the court. From their early years in college to their rise as dominant forces, tracking the growth of Bueckers and Clark offers a fascinating glimpse into their evolution as athletes. I will take a closer look at how these two athletes have developed, comparing their freshman, sophomore, and junior seasons, and analyzing key statistics that highlight their growth. By examining their performance over the years, we’ll explore how they’ve refined their games, faced challenges, and emerged as two of the brightest stars in women’s basketball.\n##Growth Over Time Between Players\nCode\nlibrary(tidyverse)\n\n\nWarning: package 'tidyverse' was built under R version 4.3.3\n\n\nWarning: package 'ggplot2' was built under R version 4.3.3\n\n\nWarning: package 'tidyr' was built under R version 4.3.3\n\n\nWarning: package 'lubridate' was built under R version 4.3.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "posts/paige_caitlin_basketball/index.html#total-contribution",
+    "href": "posts/paige_caitlin_basketball/index.html#total-contribution",
+    "title": "Paige Bueckers vs. Caitlin Clark: A Statistical Battle for Supremacy",
+    "section": "Total Contribution",
+    "text": "Total Contribution\n##Contribution of (blank)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "aliscynSportBlog",
+    "section": "",
+    "text": "Paige Bueckers vs. Caitlin Clark: A Statistical Battle for Supremacy\n\n\nA Comprehensive Comparison of Bueckers and Clark’s Dominance Over the Years\n\n\n\nbasketball\n\n\nwomen sports\n\n\ncollege sports\n\n\n\n\n\n\n\n\n\nDec 9, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\n\n\n\n\n\n\nIs there a relationship between the number of assists and the final scores of the teams in the 2024 Women’s Elite Eight?\n\n\nHow do winning teams differ in assists compared to losing teams?\n\n\n\nbasketball\n\n\nwomen sports\n\n\nelite eight\n\n\n\n\n\n\n\n\n\nNov 17, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is Aliscyn Hammond’s Sport Blog. This blog is about all my curious findings about basketball at all levels, from grassroots to the pros. Through a combination of written content and visual graphics, I aim to highlight the stories, strategies, and culture that make the game so special. Whether you’re a player, coach, or fan, my goal is to bring you closer to the game with insightful analysis and creative visuals that capture the essence of basketball and giving more knowledge to those who are interested in the sport!"
+  },
+  {
     "objectID": "posts/elite-eight-women-basketball/index.html",
     "href": "posts/elite-eight-women-basketball/index.html",
     "title": "Is there a relationship between the number of assists and the final scores of the teams in the 2024 Women’s Elite Eight?",
@@ -26,19 +54,5 @@
     "title": "Is there a relationship between the number of assists and the final scores of the teams in the 2024 Women’s Elite Eight?",
     "section": "Assists Distribution: A More Deeper Look into Variability",
     "text": "Assists Distribution: A More Deeper Look into Variability\nNow let’s explore the distribution of assists among winning and losing teams in greater detail. Instead of merely focusing on the averages, we can analyze the spread of assists within each team to better understand variability. Do winning teams consistently excel at ball distribution, or do their assist figures fluctuate more than anticipated? To help us understand this, we will use a boxplot, which will show us the range of assists for both winning and losing teams. Using this will highlight where most teams fall in terms of assists, as well as show any outliers—teams with unusually high or low assist numbers. The distribution of assists and whether there is a discernible difference between winning and losing teams will be more clear.\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggplot2)\n\nggplot(elite_eight, aes(x = factor(team_winner, labels = c(\"Loss\", \"Win\")), y = assists, fill = team_winner)) +\n  geom_boxplot() +\n  labs(title = \"Dissecting the Assist Gap\",\n       subtitle = \"A look at how success and struggle play out on the court.\",\n       x = \"Team Status\",\n       y = \"Assists\",\n       caption = \"By: Aliscyn Hammond | Source: wehoop\") +\n  scale_fill_manual(values = c(\"deeppink\", \"royalblue3\"),\n                    name= \"Team Score\",\n                    labels=c(\"Loss\",\"Win\")\n                    ) +\n  theme_minimal()+\n  theme(\n       plot.title = element_text(face = \"bold\", size = 22),\n    plot.subtitle = element_text(size = 14),\n    axis.title = element_text(size = 16,face=\"bold\"),                 \n    axis.text = element_text(size = 12),\n    plot.caption= element_text(size=10,hjust=1),\n    panel.grid.minor = element_blank(),\n    plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\n\nAs it shows, there are differences in distribution. Winning teams tend to have a smaller, more tightly grouped range of assists, which is positioned higher on the scale of assists compared to the losing teams. The median of the winning teams is closer to the top of the box, while the median of the losing teams is more centered, indicating that winning teams generally record higher assists. Also, the shorter “stems” for the winning teams suggest that most winning teams have a more consistent level of assists, while the longer “stems of the losing teams imply a greater spread in assist values, with some losing teams recording unusually high assists. Given this, the variability in assists among losing teams highlights that assists alone are not enough to ensure victory, suggesting that other factors more than likely influence the outcome of a game.\nWhile assists are a vital part of basketball and correlate with team scoring, they do not guarantee victory. Some losing teams record high assists, indicating the ball movement alone is not enough to win. The variability we have seen shows that the assist distribution of both winning and losing teams suggesting that winning is determined by broader set of factors, including but not limited to, shooting accuracy, turnovers, defense, and ability to execute under pressure. The analysis of assists in the 2024 Women’s Elite Eight provides a glimpse into how team play influences game outcomes, but it also reinforces the idea that basketball is a multi-faceted sport. Success on the court depends not just on assists, but on all variety of elements working together. By exploring additional data and using statistical techniques, anyone can gain a deeper understanding of the complex nature of sport performance and truly find the true drivers of success."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This is Aliscyn Hammond’s Sport Blog. This blog is about all my curious findings about basketball at all levels, from grassroots to the pros. Through a combination of written content and visual graphics, I aim to highlight the stories, strategies, and culture that make the game so special. Whether you’re a player, coach, or fan, my goal is to bring you closer to the game with insightful analysis and creative visuals that capture the essence of basketball and giving more knowledge to those who are interested in the sport!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "aliscynSportBlog",
-    "section": "",
-    "text": "Paige Bueckers vs. Caitlin Clark: A Statistical Battle for Supremacy\n\n\nA Comprehensive Comparison of Bueckers and Clark’s Dominance Over the Years?\n\n\n\nbasketball\n\n\nwomen sports\n\n\ncollege sports\n\n\n\n\n\n\n\n\n\nDec 9, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\n\n\n\n\n\n\nIs there a relationship between the number of assists and the final scores of the teams in the 2024 Women’s Elite Eight?\n\n\nHow do winning teams differ in assists compared to losing teams?\n\n\n\nbasketball\n\n\nwomen sports\n\n\nelite eight\n\n\n\n\n\n\n\n\n\nNov 17, 2024\n\n\nAliscyn Hammond\n\n\n\n\n\n\nNo matching items"
   }
 ]
